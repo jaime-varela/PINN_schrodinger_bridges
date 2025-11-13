@@ -6,7 +6,7 @@ $$
 dX(t) = u(x,t)\, dt + \sqrt{2\epsilon}\, dW_t,
 $$
 
-where \(X(t)\) is a stochastic process in \(\mathbb{R}^d\), \(u(x,t)\) is the optimal control field, \(W_t\) is a standard Wiener process, and \(\epsilon\) is the noise scaling parameter; see Ref. [^1] for details. As discussed in Ref. [^1], the controlled optimal control problem can be equivalently formulated through a pair of dual Schrödinger potentials that satisfy the following PDE system:
+where $X(t)$ is a stochastic process in $$\mathbb{R}^d$, $u(x,t)$ is the optimal control field, $W_t$ is a standard Wiener process, and $\epsilon$ is the noise scaling parameter; see Ref. [^1] for details. As discussed in Ref. [^1], the controlled optimal control problem can be equivalently formulated through a pair of dual Schrödinger potentials that satisfy the following PDE system:
 
 $$
 \begin{aligned}
@@ -18,10 +18,13 @@ $$
 $$
 
 The optimal drift is given by
+
 $$
 u(x,t) = 2\epsilon\, \nabla \log \varphi(x,t),
 $$
+
 and the time-marginal density is
+
 $$
 p(x,t) = \varphi(x,t)\, \hat{\varphi}(x,t).
 $$
@@ -34,7 +37,7 @@ The notebook `PINN_estimator_using_swiss_roll.ipynb` provides a toy example illu
 
 ## Results
 
-The accompanying notebook contains the relevant results. A key advantage of the PINN-based approach is that it recovers the full marginal density \(p(x,t)\), not just the drift field. The animation below illustrates an example of the inferred density evolution.
+The accompanying notebook contains the relevant results. A key advantage of the PINN-based approach is that it recovers the full marginal density $p(x,t)$, not just the drift field. The animation below illustrates an example of the inferred density evolution.
 
 ![density_function](density.gif)
 
