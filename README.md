@@ -1,9 +1,11 @@
 ## Schrödinger Bridges as PINNs
 
 One formulation of the Schrödinger bridge problem is the controlled stochastic differential equation:
+
 $$
 dX(t) = u(x,t)\, dt + \sqrt{2\epsilon}\, dW_t,
 $$
+
 where \(X(t)\) is a stochastic process in \(\mathbb{R}^d\), \(u(x,t)\) is the optimal control field, \(W_t\) is a standard Wiener process, and \(\epsilon\) is the noise scaling parameter; see Ref. [^1] for details. As discussed in Ref. [^1], the controlled optimal control problem can be equivalently formulated through a pair of dual Schrödinger potentials that satisfy the following PDE system:
 
 $$
